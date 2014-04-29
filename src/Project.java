@@ -14,7 +14,7 @@ public class Project
 {
     public Project()
     {
-        GUI cat = new GUI();
+        Frameframe gui = new Frameframe();
     }
     
     

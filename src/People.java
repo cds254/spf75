@@ -13,11 +13,11 @@ package project;
 public class People 
 {
     String name;
-    int number;
-    int age;
+    String number;
+    String age;
     String twitter;
     
-    public People(String name, int number, int age, String twitterHandle)
+    public People(String name, String number, String age, String twitterHandle)
     {
        this.name = name;
        this.number = number;
@@ -30,12 +30,12 @@ public class People
         return name;
     }
     
-    int getNumber()
+    String getNumber()
     {
         return number;
     }
     
-    int getAge()
+    String getAge()
     {
         return age;
     }
@@ -45,7 +45,13 @@ public class People
         return twitter;
     }
     
-    
+    String outputPerson(People person)
+    {
+        String text = "";
+        text = "Name: " + person.getName() + " " + "Number: " + person.getNumber() + " "
+                + "Age: " + person.getAge() + " " + "Twitter Handle: " + person.getTwitter();
+        return text;
+    }
   
     
     
